@@ -1,0 +1,97 @@
+<html>
+<head>
+
+<!–– style style style style style style style style style style style style style style style style style style style style ––>
+<style>
+      .snipcart-add-item:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        cursor:pointer;
+      }
+      .snipcart-add-item {
+        background-color: #155DE9;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background-image:url('');
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        font-family: 'Arial';
+input[type=text] {padding:5px; border:2px solid #ccc; 
+-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=text]:focus {border-color:#333; }
+
+input[type=submit] {padding:5px 15px; background:#ccc; border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+
+      }
+</style>
+<!–– style style style style style style style style style style style style style style style style style style style style ––>
+
+<!–– script script script script script script script script script script script script script script script script script script ––>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDI4MGUzNzItMTlhZC00YjgwLWI4N2QtZGVhZDNhZDUxYWY1NjM2NTMwNjU3ODE0OTc0NDEw"></script>
+
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" /></script>
+
+
+<!–– script script script script script script script script script script script script script script script script script script ––>
+
+</head>
+<body>
+<div style="text-align:center; z-index: 1;position: absolute; left: 0; right: 0; top: 260px;">
+<button 
+	class="snipcart-add-item"
+	data-item-id="MFC50C"
+	data-item-name="My Family Created the National Security State"
+	data-item-price="8.00"
+	data-item-url="https://myfamilycreated.github.io/bookcheckout2.html"
+	data-item-description="Instant download of My Family Created the National Security State, and and additional dowload link will be sent to the email address provided."
+	data-item-file-guid="3315c5e2-b931-4bc1-baae-c9dad954a9d8">
+<br>
+<p style="text-align:center"><u>Checkout with book</u>!</p>
+<br>
+</button>
+</div>
+
+<div style="background: #805534; margin: 0 auto; top: 360px; width: 465px;left: 0; right: 0;padding: 20px;color: white;z-index: 1;position: absolute;">
+<p style="text-align:center;margin: 0em auto 1em;">YDK~! Instant Download Interface</p>
+<p style="text-align:center;margin: 0em auto 0em">Example Token:</p>
+<p style="text-align:center;margin: 0em auto 0em">bd888117-5934-4f2f-82f5-5acbfa71461d</p>
+ <form onSubmit="return checkAnswer();">
+  <input id="answer" type="text" size="66" maxlength="55" class="box" placeholder="Paste your Order Token *" />
+  <input type="submit" class="submit" style="background-color: #155DE9;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background-image:url('');
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        font-family: 'Arial';
+	width: 34em" value="Lookup Order Token" />
+  </form>
+</div>
+<!–– script script script script script script script script script script script script script script script script script script ––>
+<script>
+Snipcart.execute('bind', 'order.completed', function (order) {
+	var url = 'https://safe-woodland-14275.herokuapp.com/?userid=' + order.token;
+	window.location.href = url;
+});
+
+function checkAnswer(){
+      var response = document.getElementById('answer').value;
+      if (response)
+location = 'https://safe-woodland-14275.herokuapp.com/?userid='+ response; // 'wrong.html';
+      return false;
+  }
+
+</script>
+<!–– script script script script script script script script script script script script script script script script script script ––>
+
+</body>
+</html>

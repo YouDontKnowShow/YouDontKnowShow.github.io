@@ -1,0 +1,53 @@
+<html>
+<head>
+
+<!–– style style style style style style style style style style style style style style style style style style style style ––>
+<style>
+      .buybookbutton:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        cursor:pointer;
+      }
+      .buybookbutton {
+        background-color: #155DE9;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background-image:url('https://youdontknowshow.github.io/buttonwave.png');
+	background-repeat: no-repeat;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        font-family: 'Arial';
+      }
+</style>
+<!–– style style style style style style style style style style style style style style style style style style style style ––>
+
+<!–– script script script script script script script script script script script script script script script script script script ––>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDI4MGUzNzItMTlhZC00YjgwLWI4N2QtZGVhZDNhZDUxYWY1NjM2NTMwNjU3ODE0OTc0NDEw"  data-autopop="false"></script>
+
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+<!–– script script script script script script script script script script script script script script script script script script ––>
+
+</head>
+<body>
+<div style="text-align:center">
+<button     
+	class="buybookbutton"
+	onclick="button_click()">
+	<br>
+	<span style="text-align:center"><u>Buy 'My Family Created the National Security State', (Instant eBook)</u></span>
+</button>
+</div>
+
+<!–– script script script script script script script script script script script script script script script script script script ––>
+<script>
+function button_click() {
+	window.parent.postMessage("message", "*");
+}
+</script>
+<!–– script script script script script script script script script script script script script script script script script script ––>
+
+</body>
+</html>
