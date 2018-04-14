@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
 
-<!–– style style style style style style style style style style style style style style style style style style style style ––>
+<!--STYLE-->
 <style>
       .buybookbutton:hover {
         background-color: #4CAF50; /* Green */
@@ -20,20 +21,20 @@
         font-family: 'Arial';
       }
 </style>
-<!–– style style style style style style style style style style style style style style style style style style style style ––>
+<!--STYLE-->
 
-<!–– script script script script script script script script script script script script script script script script script script ––>
+<!--SCRIPT-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDI4MGUzNzItMTlhZC00YjgwLWI4N2QtZGVhZDNhZDUxYWY1NjM2NTMwNjU3ODE0OTc0NDEw"  data-autopop="false"></script>
 
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
-<!–– script script script script script script script script script script script script script script script script script script ––>
+<!--SCRIPT-->
 
 </head>
 <body>
 <div style="text-align:center">
-<button     
+<button
 	class="buybookbutton"
 	onclick="button_click()">
 	<br>
@@ -41,13 +42,13 @@
 </button>
 </div>
 
-<!–– script script script script script script script script script script script script script script script script script script ––>
+<!--SCRIPT-->
 <script>
 function button_click() {
 	window.parent.postMessage("message", "*");
 }
 </script>
-<!–– script script script script script script script script script script script script script script script script script script ––>
+<!--SCRIPT-->
 
 </body>
 </html>
