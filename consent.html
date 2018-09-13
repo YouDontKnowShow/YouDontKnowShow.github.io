@@ -1,0 +1,45 @@
+<script>
+var commandQueue = [];
+var cmp = function(command, parameter, callback) {
+  commandQueue.push({
+    command: command,
+    parameter: parameter,
+    callback: callback
+  });
+};
+cmp.commandQueue = commandQueue;
+cmp.config = {
+  /* customPurposeListLocation: '', */
+  layout: "modal",
+  blockBrowsing: true,
+  storePublisherData: false,
+  storeConsentGlobally: true,
+  logging: false,
+  localization: {},
+  forceLocale: null,
+  gdprAppliesGlobally: false,
+  repromptOptions: {
+    fullConsentGiven: 360,
+    someConsentGiven: 30,
+    noConsentGiven: 30
+  },
+  geoIPVendor: 'https://cdn.digitrust.mgr.consensu.org/1/geoip.json',
+  testingMode: 'normal',
+  showFooterAfterSubmit: true,
+  /* logoUrl: "https://www.example.com/image.png", */
+  css: {
+      "color-primary": "#0a82be",
+      "color-secondary": "#eaeaea",
+      "color-border": "#eaeaea",
+      "color-background": "#ffffff",
+      "color-text-primary": "#333333",
+      "color-text-secondary": "#0a82be",
+      "color-linkColor": "#0a82be",
+      "color-table-background": "#f7f7f7",
+      "font-family": "'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "custom-font-url": "https://fonts.googleapis.com/css?family=Noto+Sans",
+  }
+};
+window.__cmp = cmp;
+</script>
+<script src='https://cdn.digitrust.mgr.consensu.org/1/cmp.complete.bundle.js' async> </script>
